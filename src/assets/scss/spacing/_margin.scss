@@ -1,0 +1,11 @@
+@mixin margin($n) {
+    margin: $n * 1rem;
+}
+
+.m-0-auto {
+    margin: 0 auto;
+}
+
+.m-0 {
+    @include margin(0);
+}

@@ -1,0 +1,25 @@
+@mixin width($n) {
+    width: $n * 1px;
+}
+
+.width- {
+    &200 {
+        @include width(200);
+    }
+
+    &210 {
+        @include width(210);
+    }
+
+    &300 {
+        @include width(300);
+    }
+
+    &500 {
+        @include width(500);
+    }
+
+    &980 {
+        @include width(980);
+    }
+}

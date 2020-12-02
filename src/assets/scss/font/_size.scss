@@ -1,0 +1,16 @@
+@mixin font-size($n) {
+    font-size: $n * 1px;
+}
+
+.f-28 {
+    @include font-size(28);
+}
+
+
+.f-29 {
+    @include font-size(29);
+}
+
+.f-30 {
+    @include font-size(30);
+}
