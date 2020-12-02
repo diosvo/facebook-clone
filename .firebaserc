@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "dv-fb-clone": {
+      "hosting": {
+        "facebook-clone": [
+          "dv-fb-clone"
+        ]
+      }
+    }
+  }
+}
