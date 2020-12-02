@@ -1,19 +1,29 @@
-.d-flex {
-    display: flex;
+.d- {
+    &block {
+        display: block;
+    }
+
+    &flex {
+        display: flex;
+    }
 }
 
-.jc-center {
-    justify-content: center;
+.jc- {
+    &center {
+        justify-content: center;
+    }
+
+    &between {
+        justify-content: space-between;
+    }
 }
 
-.jc-between {
-    justify-content: space-between;
-}
+.ai- {
+    &center {
+        align-items: center;
+    }
 
-.ai-center {
-    align-items: center;
-}
-
-.ai-baseline {
-    align-items: baseline;
+    &baseline {
+        align-items: baseline;
+    }
 }

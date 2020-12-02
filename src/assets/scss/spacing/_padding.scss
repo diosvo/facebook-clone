@@ -1,11 +1,10 @@
 @mixin full-padding($x, $y) {
-    padding: $x $y;
+    padding: $x * .5rem $y *.5rem;
 }
 
 @mixin padding($n) {
     padding: $n * .5rem;
 }
-
 
 @mixin padding-top($n) {
     padding-top: $n * .5rem;
@@ -27,9 +26,7 @@
     &0 {
         @include padding(0);
     }
-}
 
-.p- {
     &1 {
         @include full-padding(1, 1);
     }
@@ -37,24 +34,98 @@
     &2 {
         @include full-padding(2, 2);
     }
+
+    &3 {
+        @include full-padding(3, 3);
+    }
+
+    &4 {
+        @include full-padding(4, 4);
+    }
+
+    &5 {
+        @include full-padding(5, 5);
+    }
+
+    &6 {
+        @include full-padding(6, 6);
+    }
+
+}
+
+.pt- {
+    &1 {
+        @include padding-top(1);
+    }
+
+    &2 {
+        @include padding-top(2);
+    }
+
+    &3 {
+        @include padding-top(3);
+    }
+
+    &4 {
+        @include padding-top(4);
+    }
+
+    &5 {
+        @include padding-top(5);
+    }
+
+    &6 {
+        @include padding-top(6);
+    }
+}
+
+.pb- {
+    &1 {
+        @include padding-bottom(1);
+    }
+
+    &2 {
+        @include padding-bottom(2);
+    }
+
+    &3 {
+        @include padding-bottom(3);
+    }
+
+    &4 {
+        @include padding-bottom(4);
+    }
+
+    &5 {
+        @include padding-bottom(5);
+    }
+
+    &6 {
+        @include padding-bottom(6);
+    }
 }
 
 .pr- {
     &1 {
         @include padding-right(1);
     }
+
     &2 {
         @include padding-right(2);
     }
+
     &3 {
         @include padding-right(3);
     }
+
     &4 {
         @include padding-right(4);
     }
+
     &5 {
         @include padding-right(5);
     }
+
     &6 {
         @include padding-right(6);
     }
@@ -64,18 +135,23 @@
     &1 {
         @include padding-left(1);
     }
+
     &2 {
         @include padding-left(2);
     }
+
     &3 {
         @include padding-left(3);
     }
+
     &4 {
         @include padding-left(4);
     }
+
     &5 {
         @include padding-left(5);
     }
+
     &6 {
         @include padding-left(6);
     }
