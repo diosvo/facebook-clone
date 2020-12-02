@@ -1,7 +1,20 @@
 :root {
+    --white: #FFFFFF;
     --bg-login: #F0F2F5;
+    --btn-login: #1877F2;
+    --hr: #DADDE1;
 }
 
 .bg-login {
     background-color: var(--bg-login);
+}
+
+.btn-login {
+    background-color: var(--btn-login);
+}
+
+.text- {
+    &white {
+        color: var(--white);
+    }
 }

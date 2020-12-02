@@ -2,15 +2,28 @@
     font-size: $n * 1px;
 }
 
-.f-28 {
-    @include font-size(28);
-}
+.f- {
+    &17 {
+        @include font-size(17);
+    }
 
+    &18 {
+        @include font-size(18);
+    }
 
-.f-29 {
-    @include font-size(29);
-}
+    &20 {
+        @include font-size(20);
+    }
 
-.f-30 {
-    @include font-size(30);
+    &28 {
+        @include font-size(28);
+    }
+
+    &29 {
+        @include font-size(29);
+    }
+
+    &30 {
+        @include font-size(30);
+    }
 }

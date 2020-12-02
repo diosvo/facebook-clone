@@ -1,0 +1,27 @@
+@mixin border($n) {
+    border: $n * 1px;
+}
+
+@mixin border-radius($n) {
+    border-radius: $n * 1px;
+}
+
+.hr {
+    display: flex;
+    align-items: center;
+
+    border-bottom: 1px solid var(--hr);
+    margin: 1rem 0;
+}
+
+.bd- {
+    &none {
+        @include border(0);
+    }
+}
+
+.bd-radius- {
+    &6 {
+        @include border-radius(6);
+    }
+}
