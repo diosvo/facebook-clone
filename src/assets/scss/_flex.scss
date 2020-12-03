@@ -1,0 +1,29 @@
+.d- {
+    &block {
+        display: block;
+    }
+
+    &flex {
+        display: flex;
+    }
+}
+
+.jc- {
+    &center {
+        justify-content: center;
+    }
+
+    &between {
+        justify-content: space-between;
+    }
+}
+
+.ai- {
+    &center {
+        align-items: center;
+    }
+
+    &baseline {
+        align-items: baseline;
+    }
+}
