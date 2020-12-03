@@ -1,20 +1,31 @@
 :root {
-    --white: #FFFFFF;
-    --bg-login: #F0F2F5;
-    --btn-login: #1877F2;
-    --hr: #DADDE1;
+    --white     : #FFFFFF;
+    --secondary: #737373;
+    --bg-login  : #F0F2F5;
+    --btn-login : #1877F2;
+    --btn-newAcc: #42B72A;
+    --hr        : #DADDE1;
 }
 
 .bg-login {
     background-color: var(--bg-login);
 }
 
-.btn-login {
-    background-color: var(--btn-login);
+.btn {
+    &__blue {
+        background-color: var(--btn-login);
+    }
+
+    &__green {
+        background-color: var(--btn-newAcc);
+    }
 }
 
 .text- {
     &white {
         color: var(--white);
+    }
+    &secondary {
+        color: var(--secondary);
     }
 }

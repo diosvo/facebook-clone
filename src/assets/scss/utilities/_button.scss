@@ -1,0 +1,14 @@
+button {
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.disable {
+    cursor    : not-allowed!important;
+    opacity   : .7;
+}

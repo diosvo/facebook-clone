@@ -22,6 +22,14 @@
     margin-right: $n * .5rem;
 }
 
+@mixin margin-x($n) {
+    margin: 0 ($n * .5rem);
+}
+
+@mixin margin-y($n) {
+    margin: ($n * .5rem) 0;
+}
+
 .m-0-auto {
     margin: 0 auto;
 }
@@ -157,5 +165,57 @@
 
     &6 {
         @include margin-left(6);
+    }
+}
+
+.mx- {
+    &1 {
+        @include margin-x(1);
+    }
+
+    &2 {
+        @include margin-x(2);
+    }
+
+    &3 {
+        @include margin-x(3);
+    }
+
+    &4 {
+        @include margin-x(4);
+    }
+
+    &5 {
+        @include margin-x(5);
+    }
+
+    &6 {
+        @include margin-x(6);
+    }
+}
+
+.my- {
+    &1 {
+        @include margin-y(1);
+    }
+
+    &2 {
+        @include margin-y(2);
+    }
+
+    &3 {
+        @include margin-y(3);
+    }
+
+    &4 {
+        @include margin-y(4);
+    }
+
+    &5 {
+        @include margin-y(5);
+    }
+
+    &6 {
+        @include margin-y(6);
     }
 }
