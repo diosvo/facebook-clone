@@ -1,7 +1,7 @@
 .login- {
     &container {
-        width: 100vw;
-        height : 100vh;
+        width : 100vw;
+        height: 100vh;
 
         display: flex;
 
@@ -13,11 +13,71 @@
                 justify-content: space-between;
                 align-items    : center;
 
+                &__left {
+                    .fb- {
+                        &img-container {
+                            width: 300px;
+                        }
+
+                        &content {
+                            width       : 500px;
+                            padding-left: 2rem;
+
+                            p {
+                                font-size: 28px;
+                            }
+                        }
+                    }
+                }
+
                 &__right {
                     padding-left: 3rem;
-                    
+
                     .mat-input-element {
                         font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:600px) {
+    .login- {
+        &container {
+            flex-direction: column;
+            height        : auto;
+
+            .login {
+                &__header {
+                    flex-direction: column;
+
+                    &__left {
+                        display        : flex;
+                        flex-direction : column;
+                        justify-content: center;
+                        align-items    : center;
+
+                        .fb- {
+                            &content {
+                                width       : 400px;
+                                padding-left: 0;
+
+                                p {
+                                    font-size : 23px;
+                                    text-align: center;
+                                    padding   : 0 1rem;
+                                }
+                            }
+                        }
+                    }
+
+                    &__right {
+                        padding: 1rem;
+
+                        mat-card {
+                            width: 375px;
+                        }
                     }
                 }
             }
