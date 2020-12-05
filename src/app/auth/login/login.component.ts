@@ -1,13 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, FormGroupDirective, NgForm, Validators } from '@angular/forms';
-import { ErrorStateMatcher } from '@angular/material/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
 
-export class MyErrorStateMatcher implements ErrorStateMatcher {
-  isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
-    const isSubmitted = form && form.submitted;
-    return !!(control && control.invalid && (control.dirty || control.touched || isSubmitted));
-  }
-}
+import { RegisterComponent } from '../register/register.component';
+
 
 @Component({
   selector: 'app-login',
@@ -17,8 +13,10 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
 export class LoginComponent implements OnInit {
   loginForm: FormGroup;
 
-  constructor(private _fb: FormBuilder) { 
-    
+  constructor(private _fb: FormBuilder,
+    private _matDialog: MatDialog
+  ) {
+
   }
 
   ngOnInit(): void {
@@ -40,8 +38,16 @@ export class LoginComponent implements OnInit {
     return this.loginForm.get('password')
   }
 
-  onSubmit() {
+  onLogin() {
 
+  }
+
+  register() {
+    let dialogRef = this._matDialog.open(RegisterComponent, {
+      width: '450px',
+    });
+
+    dialogRef.afterClosed().subscribe();
   }
 
 }
