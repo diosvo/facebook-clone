@@ -19,7 +19,7 @@
 }
 
 @mixin margin-left($n) {
-    margin-right: $n * .5rem;
+    margin-left: $n * .5rem;
 }
 
 @mixin margin-x($n) {

@@ -7,6 +7,9 @@
 }
 
 .width- {
+    &20 {
+        @include percent-width(20);
+    }
     &48 {
         @include percent-width(48);
     }

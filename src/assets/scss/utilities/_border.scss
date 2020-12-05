@@ -7,11 +7,11 @@
 }
 
 .hr {
-    display: flex;
+    display    : flex;
     align-items: center;
 
     border-bottom: 1px solid var(--hr);
-    margin: 1rem 0;
+    margin       : 1rem 0;
 }
 
 .bd- {
@@ -23,5 +23,13 @@
 .bd-radius- {
     &6 {
         @include border-radius(6);
+    }
+
+    &7 {
+        @include border-radius(7);
+    }
+
+    &50 {
+        @include border-radius(50);
     }
 }

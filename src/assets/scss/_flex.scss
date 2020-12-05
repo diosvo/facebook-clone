@@ -1,3 +1,7 @@
+@mixin flex-grow($n) {
+    flex-grow: $n;
+}
+
 .d- {
     &block {
         display: block;
@@ -25,5 +29,17 @@
 
     &baseline {
         align-items: baseline;
+    }
+}
+
+.flex-grow- {
+    &one-four {
+        @include flex-grow(0.25)
+    }
+    &1 {
+        @include flex-grow(1)
+    }
+    &2 {
+        @include flex-grow(2)
     }
 }

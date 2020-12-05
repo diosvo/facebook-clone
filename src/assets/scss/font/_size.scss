@@ -3,6 +3,12 @@
 }
 
 .f- {
+    &8 {
+        @include font-size(8);
+    }
+    &9 {
+        @include font-size(9);
+    }
     &10 {
         @include font-size(10);
     }

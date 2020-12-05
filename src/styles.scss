@@ -8,4 +8,8 @@ body {
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+input:focus {
+    outline: none;
+}
+
 @import './assets/scss/main.scss'

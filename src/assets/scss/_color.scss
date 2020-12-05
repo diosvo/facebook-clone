@@ -1,30 +1,40 @@
 :root {
-    --white     : #FFFFFF;
-    --secondary: #737373;
-    --bg-login  : #F0F2F5;
-    --btn-login : #1877F2;
-    --btn-newAcc: #42B72A;
-    --hr        : #DADDE1;
+    --bg-login        : #F0F2F5;
+    --bg-main         : #F0F2F5;
+    --white           : #FFFFFF;
+    --secondary       : #737373;
+    --icon-secondary  : #65676B;
+    --secondary-btn-bg: #E4E6EB;
+    --btn-login       : #1877F2;
+    --btn-newAcc      : #42B72A;
+    --icon-hover      : #1877F2;
+    --hr              : #DADDE1;
 }
 
-.bg-login {
-    background-color: var(--bg-login);
+.bg- {
+
+    &main,
+    &home-body,
+    &login {
+        background-color: var(--bg-login);
+    }
 }
 
-.btn {
-    &__blue {
+.btn__ {
+    &blue {
         background-color: var(--btn-login);
     }
 
-    &__green {
+    &green {
         background-color: var(--btn-newAcc);
     }
 }
 
-.text- {
+.text__ {
     &white {
         color: var(--white);
     }
+
     &secondary {
         color: var(--secondary);
     }
