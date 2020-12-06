@@ -59,5 +59,26 @@
         }
     }
 
-    &body {}
+    &body {
+        &__sidebarLeft {
+            
+        }
+
+        &__sidebarRight {
+            overflow: hidden;
+            
+            #sponsored img {
+                width: 7rem;
+                border-radius: 10px;
+            }
+
+            .contact {
+                height: 100%;
+                overflow: hidden;
+                &__list {
+                    overflow-y: auto;
+                }
+            }
+        }
+    }
 }

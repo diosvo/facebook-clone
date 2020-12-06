@@ -32,6 +32,16 @@
     }
 }
 
+.as- {
+    &center {
+        align-items: center;
+    }
+
+    &baseline {
+        align-items: baseline;
+    }
+}
+
 .flex-grow- {
     &one-four {
         @include flex-grow(0.25)
