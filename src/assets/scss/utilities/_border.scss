@@ -29,6 +29,10 @@
         @include border-radius(7);
     }
 
+    &12 {
+        @include border-radius(12);
+    }
+
     &50 {
         @include border-radius(50);
     }

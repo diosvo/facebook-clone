@@ -9,9 +9,10 @@ import { MatButtonModule } from '@angular/material/button';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
+import { MainBodyComponent } from './main-body/main-body.component';
 
 @NgModule({
-  declarations: [HomeComponent],
+  declarations: [HomeComponent, MainBodyComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,

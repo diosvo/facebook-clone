@@ -46,9 +46,15 @@
     &one-four {
         @include flex-grow(0.25)
     }
+
+    &0 {
+        @include flex-grow(0)
+    }
+
     &1 {
         @include flex-grow(1)
     }
+
     &2 {
         @include flex-grow(2)
     }

@@ -1,10 +1,19 @@
 .home__ {
     &container {
+        line-height: 1.34rem;
+
         background-color: var(--white);
-        line-height     : 1.34rem;
+        box-shadow      : 0 1px 2px var(--shadow);
     }
 
     &header {
+
+        position: sticky;
+        top     : 0;
+        left    : 0;
+
+        background-color: var(--white);
+        z-index         : 1;
 
         &__left {
             img {
@@ -22,8 +31,9 @@
         }
 
         &__middle {
+
             div {
-                padding: .8rem 0;
+                padding: .75rem 0;
 
                 &:hover {
                     border-radius   : 7px;
@@ -61,13 +71,34 @@
 
     &body {
         &__sidebarLeft {
+            position       : sticky;
+            overflow-anchor: none;
+            max-height     : 0;
+
+            top    : 57px;
+            left   : 0;
+            z-index: 0;
+
             span:before {
                 content    : '';
                 margin-left: 1.5rem;
             }
         }
 
+        &__sidebarMiddle {
+            display        : flex;
+            justify-content: center;
+            padding        : 1rem 0;
+        }
+
         &__sidebarRight {
+            position       : sticky;
+            overflow-anchor: none;
+            max-height     : 0;
+
+            top    : 57px;
+            left   : 0;
+            z-index: 0;
 
             #sponsored img {
                 width        : 7rem;
@@ -78,7 +109,7 @@
                 height: 228px;
 
                 &__list {
-                    height: 100%;
+                    height    : 100%;
                     overflow-y: auto;
                 }
             }
