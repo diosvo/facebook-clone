@@ -61,21 +61,24 @@
 
     &body {
         &__sidebarLeft {
-            
+            span:before {
+                content    : '';
+                margin-left: 1.5rem;
+            }
         }
 
         &__sidebarRight {
-            overflow: hidden;
-            
+
             #sponsored img {
-                width: 7rem;
+                width        : 7rem;
                 border-radius: 10px;
             }
 
             .contact {
-                height: 100%;
-                overflow: hidden;
+                height: 228px;
+
                 &__list {
+                    height: 100%;
                     overflow-y: auto;
                 }
             }

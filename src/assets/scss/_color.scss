@@ -11,6 +11,10 @@
     --hr              : #DADDE1;
 }
 
+body {
+    background-color: var(--bg-login);
+}
+
 .bg- {
 
     &main,
