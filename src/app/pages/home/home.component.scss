@@ -33,7 +33,7 @@
         &__middle {
 
             div {
-                padding: .75rem 0;
+                padding: .75rem 2.75rem;
 
                 &:hover {
                     border-radius   : 7px;
@@ -41,14 +41,31 @@
 
                     cursor    : pointer;
                     transition: 200ms;
+
+                    .mat-tooltip {
+                        margin-top: 2rem;
+                    }
                 }
 
                 mat-icon {
                     color: var(--icon-secondary);
+                }
+            }
 
-                    &.active {
-                        color: var(--icon-hover);
-                    }
+            div.active {
+                position: relative;
+
+                &::before {
+                    content : '';
+                    width   : 100%;
+                    position: absolute;
+
+                    bottom       : -.3rem;
+                    border-bottom: 3px solid var(--icon-hover);
+                }
+
+                &:hover {
+                    background-color: transparent;
                 }
             }
         }

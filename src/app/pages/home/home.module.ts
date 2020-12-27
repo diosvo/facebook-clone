@@ -6,6 +6,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
@@ -21,7 +22,8 @@ import { MainBodyComponent } from './main-body/main-body.component';
     MatIconModule,
     MatBadgeModule,
     MatMenuModule,
-    MatButtonModule
+    MatButtonModule,
+    MatTooltipModule
   ],
 })
 export class HomeModule { }
