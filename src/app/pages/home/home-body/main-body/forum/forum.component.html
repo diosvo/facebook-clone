@@ -4,9 +4,10 @@
             <div class="d-flex ai-center">
                 <img src="../../../assets/images/me.PNG" alt="avatar" width=100% mat-card-avatar>
                 <div class="input width-100 bg-main d-flex ai-center bd-radius-50 ml-2">
-                    <form>
-                        <input class="width-100 bg-main f-15 lh-28 ml-1" type="text"
+                    <form [formGroup]="postForm" (ngSubmit)="onSubmit()">
+                        <input formControlName="textPost" class="width-100 bg-main f-15 lh-28 ml-1" type="text"
                             placeholder="What's on your mind, Dios?">
+                        <button style="display: none;" type="submit"></button>
                     </form>
                 </div>
             </div>
@@ -34,7 +35,13 @@
         <div class="p-1-1.5">
             <div class="d-flex ai-center">
                 <img src="../../../assets/images/me.PNG" alt="avatar" width=100% mat-card-avatar>
-                <span class="fw-550 ml-2">MyNhung Vo</span>
+                <div class="ml-2">
+                    <span class="fw-550 mb-1">MyNhung Vo</span>
+                    <div class="f-12 text__secondary d-flex ai-baseline">
+                        <span>4h</span>
+                        <mat-icon style="display: block;" class="f-12 ml-1">public</mat-icon>
+                    </div>
+                </div>
             </div>
 
             <div class="mt-1" style="max-width: 500px;">
