@@ -4,6 +4,7 @@
 - Material Angular
 - My Atomic CSS
 - Firebase on Back-end side
+- Just have desktop size
 
 ##  My purpose
 
