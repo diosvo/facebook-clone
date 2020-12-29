@@ -1,0 +1,64 @@
+<div class="home__header d-flex">
+    <div class="home__header__left flex-grow-0">
+        <div class="d-flex ai-center p-1-2">
+            <img src="../../../assets/images/fb-logo-circle.png" alt="logo" routerLink="/home" mat-card-avatar>
+            <div class="input bg-main d-flex ai-center bd-radius-50 ml-2">
+                <mat-icon style="margin-top: 3px;">search</mat-icon>
+                <form>
+                    <input class="bg-main f-15 lh-28 ml-1" type="text" placeholder="Search Facebook">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="home__header__middle d-flex ai-center flex-grow-2">
+        <div class="active d-flex" matTooltip="Home">
+            <mat-icon class="f-28 m-0-auto">home</mat-icon>
+        </div>
+        <div class="d-flex" matTooltip="Watch">
+            <mat-icon class="f-28 m-0-auto">ondemand_video</mat-icon>
+        </div>
+        <div class="d-flex" matTooltip="Marketplace">
+            <mat-icon class="f-28 m-0-auto" matBadge="9+" matBadgeColor="warn" matBadgePosition="above after">store
+            </mat-icon>
+        </div>
+        <div class="d-flex" matTooltip="Groups">
+            <mat-icon class="f-28 m-0-auto">group</mat-icon>
+        </div>
+        <div class="d-flex" matTooltip="Gaming">
+            <mat-icon class="f-28 m-0-auto">flag</mat-icon>
+        </div>
+    </div>
+
+    <div class="home__header__right">
+        <div class="d-flex ai-center p-1-2">
+            <!-- Name -->
+            <div class="d-flex ai-center">
+                <img src="../../../assets/images/me.PNG" alt="avatar" width=100% mat-card-avatar>
+                <span class="ml-2 fw-550">MyNhung</span>
+            </div>
+
+            <!-- Icon Right -->
+            <div class="icon d-flex mx-2" matTooltip="Create">
+                <mat-icon class="m-0-auto">add</mat-icon>
+            </div>
+            <div class="icon d-flex" matTooltip="Messages">
+                <mat-icon class="m-0-auto" matBadge="9" matBadgeColor="primary" matBadgePosition="above after">
+                    message</mat-icon>
+            </div>
+            <div class="icon d-flex mx-2" matTooltip="Notifications">
+                <mat-icon class="m-0-auto" matBadge="3" matBadgeColor="warn" matBadgePosition="above after">
+                    notifications</mat-icon>
+            </div>
+            <div class="icon d-flex" matTooltip="Account">
+                <mat-icon class="m-0-auto" mat-button [matMenuTriggerFor]="menu" class="cursor__pointer">expand_more
+                </mat-icon>
+                <mat-menu #menu="matMenu">
+                    <button mat-menu-item routerLink="/auth/login">
+                        <mat-icon>exit_to_app</mat-icon> Logout
+                    </button>
+                </mat-menu>
+            </div>
+        </div>
+    </div>
+</div>

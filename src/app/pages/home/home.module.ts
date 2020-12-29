@@ -11,9 +11,12 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { MainBodyComponent } from './main-body/main-body.component';
+import { HomeHeaderComponent } from './home-header/home-header.component';
+import { HomeBodyComponent } from './home-body/home-body.component';
+import { StoryHighlightComponent } from './main-body/story-highlight/story-highlight.component';
 
 @NgModule({
-  declarations: [HomeComponent, MainBodyComponent],
+  declarations: [HomeComponent, MainBodyComponent, HomeHeaderComponent, HomeBodyComponent, StoryHighlightComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,

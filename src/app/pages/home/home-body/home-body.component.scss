@@ -1,0 +1,47 @@
+.home__body {
+    &__sidebarLeft {
+        flex-basis     : 200px;
+        position       : sticky;
+        overflow-anchor: none;
+        max-height     : 0;
+
+        top    : 57px;
+        left   : 0;
+        z-index: 0;
+
+        span:before {
+            content    : '';
+            margin-left: 1.5rem;
+        }
+    }
+
+    &__sidebarMiddle {
+        display        : flex;
+        justify-content: center;
+        padding        : 1rem 0;
+    }
+
+    &__sidebarRight {
+        position       : sticky;
+        overflow-anchor: none;
+        max-height     : 0;
+
+        top    : 57px;
+        left   : 0;
+        z-index: 0;
+
+        #sponsored img {
+            width        : 7rem;
+            border-radius: 10px;
+        }
+
+        .contact {
+            height: 228px;
+
+            &__list {
+                height    : 100%;
+                overflow-y: auto;
+            }
+        }
+    }
+}
