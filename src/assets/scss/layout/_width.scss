@@ -27,6 +27,14 @@
         @include percent-width(50);
     }
 
+    &80 {
+        @include percent-width(80);
+    }
+
+    &85 {
+        @include percent-width(85);
+    }
+
     &100 {
         @include percent-width(100);
     }

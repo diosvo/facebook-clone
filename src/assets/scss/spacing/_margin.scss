@@ -195,6 +195,10 @@
 }
 
 .my- {
+    &1\.5 {
+        @include margin-y(1.5);
+    }
+
     &1 {
         @include margin-y(1);
     }

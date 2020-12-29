@@ -24,6 +24,10 @@
     &between {
         justify-content: space-between;
     }
+
+    &space-around {
+        justify-content: space-around;
+    }
 }
 
 .ai- {
@@ -33,6 +37,10 @@
 
     &baseline {
         align-items: baseline;
+    }
+
+    &flex-end {
+        align-items: flex-end;
     }
 }
 
