@@ -14,9 +14,10 @@ import { MainBodyComponent } from './main-body/main-body.component';
 import { HomeHeaderComponent } from './home-header/home-header.component';
 import { HomeBodyComponent } from './home-body/home-body.component';
 import { StoryHighlightComponent } from './main-body/story-highlight/story-highlight.component';
+import { ForumComponent } from './main-body/forum/forum.component';
 
 @NgModule({
-  declarations: [HomeComponent, MainBodyComponent, HomeHeaderComponent, HomeBodyComponent, StoryHighlightComponent],
+  declarations: [HomeComponent, MainBodyComponent, HomeHeaderComponent, HomeBodyComponent, StoryHighlightComponent, ForumComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,

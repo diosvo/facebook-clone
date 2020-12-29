@@ -2,6 +2,10 @@
     flex-grow: $n;
 }
 
+@mixin flex-shrink($n) {
+    flex-shrink: $n;
+}
+
 .d- {
     &block {
         display: block;
@@ -42,6 +46,16 @@
     }
 }
 
+.flex-direction- {
+    &column {
+        flex-direction: column;
+    }
+
+    &row {
+        flex-direction: row;
+    }
+}
+
 .flex-grow- {
     &one-four {
         @include flex-grow(0.25)
@@ -57,5 +71,23 @@
 
     &2 {
         @include flex-grow(2)
+    }
+}
+
+.flex-shrink- {
+    &one-four {
+        @include flex-shrink(0.25)
+    }
+
+    &0 {
+        @include flex-shrink(0)
+    }
+
+    &1 {
+        @include flex-shrink(1)
+    }
+
+    &2 {
+        @include flex-shrink(2)
     }
 }

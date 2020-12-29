@@ -9,7 +9,7 @@
 
 - Improving my skills
 - Create my Atomic CSS
-- Limit as CSS styles as possible. It improve website speed and performance optimization like current Facebook.
+- Limit as CSS styles for each module as possible. It improve website speed and performance optimization like current Facebook.
 
 ## Development server
 
