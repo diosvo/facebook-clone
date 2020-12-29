@@ -8,6 +8,15 @@ body {
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+*::-webkit-scrollbar {
+    width: .75em;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #cccccc;
+    border-radius   : 10px;
+}
+
 input:focus {
     outline: none;
 }

@@ -23,6 +23,10 @@ body {
     &login {
         background-color: var(--bg-login);
     }
+
+    &white {
+        background-color: var(--white);
+    }
 }
 
 .btn__ {
@@ -42,5 +46,11 @@ body {
 
     &secondary {
         color: var(--secondary);
+    }
+}
+
+.bs- {
+    &home {
+        box-shadow: 0 1px 2px var(--shadow);
     }
 }
