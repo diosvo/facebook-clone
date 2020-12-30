@@ -6,9 +6,11 @@
     &8 {
         @include font-size(8);
     }
+
     &9 {
         @include font-size(9);
     }
+
     &10 {
         @include font-size(10);
     }
@@ -47,6 +49,34 @@
 
     &20 {
         @include font-size(20);
+    }
+
+    &21 {
+        @include font-size(21);
+    }
+
+    &22 {
+        @include font-size(22);
+    }
+
+    &23 {
+        @include font-size(23);
+    }
+
+    &24 {
+        @include font-size(24);
+    }
+
+    &25 {
+        @include font-size(25);
+    }
+
+    &26 {
+        @include font-size(26);
+    }
+
+    &27 {
+        @include font-size(27);
     }
 
     &28 {

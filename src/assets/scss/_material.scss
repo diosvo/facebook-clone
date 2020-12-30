@@ -1,3 +1,12 @@
 .mat-badge-medium.mat-badge-above .mat-badge-content {
     top: -7px !important;
 }
+
+.user-avatar img.mat-card-avatar {
+    width : 32px;
+    height: 32px;
+}
+
+.mat-tooltip {
+    font-size: 14px;
+}

@@ -1,0 +1,80 @@
+.home__header {
+
+    position: sticky;
+    top     : 0;
+    left    : 0;
+
+    background-color: var(--white);
+    z-index         : 1;
+
+    &__left {
+        img {
+            cursor: pointer;
+        }
+    }
+
+    &__middle {
+
+        div {
+            padding: .75rem 2.5rem;
+
+            &:hover {
+                border-radius   : 7px;
+                background-color: var(--bg-main);
+
+                cursor    : pointer;
+                transition: 200ms ease-in-out;
+
+                .mat-tooltip {
+                    margin-top: 2rem;
+                }
+            }
+
+            mat-icon {
+                color: var(--secondary);
+            }
+        }
+
+        div:not(:first-child),
+        div:not(:last-child) {
+            margin: 0 0.25rem;
+        }
+
+        div.active {
+            position: relative;
+
+            &::before {
+                content : '';
+                width   : 100%;
+                position: absolute;
+
+                left         : 0;
+                bottom       : -.3rem;
+                border-bottom: 3px solid var(--icon-hover);
+            }
+
+            &:hover {
+                background-color: transparent;
+            }
+
+            mat-icon {
+                color: var(--icon-hover);
+            }
+        }
+    }
+
+    &__right {
+        .icon {
+            background-color: var(--secondary-btn-bg);
+            border-radius   : 50%;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            mat-icon {
+                padding: .5rem;
+            }
+        }
+    }
+}

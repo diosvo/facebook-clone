@@ -8,8 +8,13 @@ body {
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-input:focus {
-    outline: none;
+*::-webkit-scrollbar {
+    width: .75em;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #cccccc;
+    border-radius   : 10px;
 }
 
 @import './assets/scss/main.scss'

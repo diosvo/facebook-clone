@@ -23,11 +23,13 @@
 }
 
 @mixin padding-x($n) {
-    padding: 0 ($n * .5rem);
+    padding-right: $n * .5rem;
+    padding-left : $n * .5rem;
 }
 
 @mixin padding-y($n) {
-    padding: ($n * .5rem) 0;
+    padding-top   : $n * .5rem;
+    padding-bottom: $n * .5rem;
 }
 
 .p- {
@@ -39,12 +41,20 @@
         @include full-padding(1, 1);
     }
 
+    &1-1\.5 {
+        @include full-padding(1, 1.5);
+    }
+
     &1-2 {
         @include full-padding(1, 2);
     }
 
     &2 {
         @include full-padding(2, 2);
+    }
+
+    &2-1\.5 {
+        @include full-padding(1, 1.5);
     }
 
     &3 {
@@ -196,6 +206,10 @@
 }
 
 .py- {
+    &\.75 {
+        @include padding-y(.75);
+    }
+
     &1 {
         @include padding-y(1);
     }

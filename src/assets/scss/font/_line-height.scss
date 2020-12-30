@@ -3,6 +3,10 @@
 }
 
 .lh- {
+    &21.\44 {
+        @include line-height(21.44);
+    }
+
     &28 {
         @include line-height(28);
     }
